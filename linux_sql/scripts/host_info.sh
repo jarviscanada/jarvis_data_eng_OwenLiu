@@ -25,13 +25,20 @@ cpu_architecture=$(echo "$lscpu_out"  | egrep "^Architecture:" | awk '{print $2}
 cpu_model=$(echo "$lscpu_out"  | egrep "^Model:" | awk '{print $2}' | xargs)
 cpu_mhz=$(echo "$lscpu_out"  | egrep "^CPU MHz:" | awk '{print $2}' | xargs)
 l2_cache=$(echo "$lscpu_out"  | egrep "^L2 cache:" | awk '{print $2}' | xargs)
-L1d_cache=$(echo "$lscpu_out"  | egrep "^L1d cache:" | awk '{print $2}' | xargs)
-L1i_cache=$(echo "$lscpu_out"  | egrep "^L1i cache:" | awk '{print $2}' | xargs)
-L3_cache=$(echo "$lscpu_out"  | egrep "^L3 cache:" | awk '{print $2}' | xargs)
 total_mem=$(echo "mem_info"  | egrep "MemTotal:" | awk '{print $2}' |xargs)
 timestamp= $(vmstat -t | tail -1 | awk '{print $18}' | xargs)
 
-#- construct the INSERT statement
+#Subquery to find matching id in host_info table
+host_id="(SELECT id FROM host_info WHERE hostname='$hostname')";
 
+#- construct the INSERT statement
+insert_hardware="INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, total_mem, timestamp)
+VALUES('$id', '$hostname', '$cpu_number', '$cpu_architecture', '$cpu_model', '$cpu_mhz', '$L2_cache', '$total_mem', '$total_mem', '$timestamp')"
 
 #- execute the INSERT statement through psql CLI tool
+#set up environment variable for pql cmd
+export PGPASSWORD=$(psql_password)
+
+#Insert data into a database
+psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_hardware"
+exit $?
