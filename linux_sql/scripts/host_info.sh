@@ -33,7 +33,7 @@ host_id="(SELECT id FROM host_info WHERE hostname='$hostname')";
 
 #- construct the INSERT statement
 insert_hardware="INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, total_mem, timestamp)
-VALUES('$id', '$hostname', '$cpu_number', '$cpu_architecture', '$cpu_model', '$cpu_mhz', '$L2_cache', '$total_mem', '$total_mem', '$timestamp')"
+VALUES('$host_id', '$hostname', '$cpu_number', '$cpu_architecture', '$cpu_model', '$cpu_mhz', '$L2_cache', '$total_mem', '$total_mem', '$timestamp')"
 
 #- execute the INSERT statement through psql CLI tool
 #set up environment variable for pql cmd

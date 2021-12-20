@@ -23,8 +23,8 @@ cpu_number=1
 cpu_architecture=x86_64
 cpu_model=Intel(R) Xeon(R) CPU @ 2.30GHz
 cpu_mhz=2300.000
-L2_cache=256     #in kB
-total_mem=601324 #in kB
+L2_cache=256     --in kB
+total_mem=601324 --in kB
 timestamp=2019-05-29 17:49:53 #Current time in UTC time zone
 
 -- DDL SQL Script Creation
@@ -41,23 +41,17 @@ CREATE TABLE PUBLIC.host_info
      timestamp        TIMESTAMP NOT NULL
   );
 
--- DML
--- INSERT statement
--- INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, timestamp)
---VALUES()??
-;
-
 -- Declare Vars for usage specs.
 timestamp,host_id,memory_free,cpu_idle,cpu_kernel,disk_io,disk_available
 
 -- Declare default values for usage specs.
-timestamp=2019-05-29 16:53:28 #UTC time zone
-host_id=1                     #host id from `hosts` table
-memory_free= 256              #in MB
-cpu_idle=95                   #in percentage
-cpu_kernel=0                  #in percentage
-disk_io=0                     #number of disk I/O
-disk_available=31220          #in MB. root directory avaiable disk
+timestamp=2019-05-29 16:53:28 --UTC time zone
+host_id=1                     --host id from `hosts` table
+memory_free= 256              --in MB
+cpu_idle=95                   --in percentage
+cpu_kernel=0                  --in percentage
+disk_io=0                     --number of disk I/O
+disk_available=31220          --in MB. root directory avaiable disk
 
 -- Create DDL table for usage specs
 CREATE TABLE PUBLIC.host_usage
@@ -72,16 +66,8 @@ CREATE TABLE PUBLIC.host_usage
      FOREIGN KEY(host_id) REFERENCES host_info(id) --Foreign key declaration that refers back to host_info's pr key.
   );
 
--- DML
--- INSERT statement
--- INSERT INTO host_usage ("timestamp", host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available)
---VALUES(); INSERT INTO is in shell script.
 
---
-
--- ddl.sql pseudocode/steps
-
-(optional) switch to `host_agent`
+switch to `host_agent`
 
 create `host_info` table if not exist
 
