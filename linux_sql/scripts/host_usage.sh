@@ -1,8 +1,8 @@
-#save hostname to a variable
 hostname=$(hostname -f)
-
-#save number of CPU to a variable
 lscpu_out=`lscpu`
+mem_info=$(cat /proc/meminfo)
+di_out=$(df -BM /)
+
 
 cpu_number=$(echo "$lscpu_out"  | egrep "^CPU\(s\):" | awk '{print $2}' | xargs)
 
@@ -16,16 +16,14 @@ l2_cache=$(echo "$lscpu_out"  | egrep "^L2 cache:" | awk '{print $2}' | xargs)
 L1d_cache=$(echo "$lscpu_out"  | egrep "^L1d cache:" | awk '{print $2}' | xargs)
 L1i_cache=$(echo "$lscpu_out"  | egrep "^L1i cache:" | awk '{print $2}' | xargs)
 L3_cache=$(echo "$lscpu_out"  | egrep "^L3 cache:" | awk '{print $2}' | xargs)
-total_mem=$((l2_cache+L1d_cache+L1i_cache+L3_cache))
-timestamp= $(date +%F_%T)
-
-#current timestamp in `2019-11-26 14:40:19` format
+total_mem=$(echo "mem_info"  | egrep "MemTotal:" | awk '{print $2}' |xargs)
+timestamp= $(vmstat -t | tail -1 | awk '{print $18}' | xargs)
 
 #usage
-memory_free= $(awk '/MemFree/ { printf "%.3f \n", $2/1024/1024 }' /proc/meminfo)
+memory_free=$(echo "mem_info"  | egrep "MemFree:" | awk '{print $2}' |xargs)
 
 #NO IDEA
-cpu_idle=
-cpu_kernel=
-disk_io=
-disk_available=
+cpu_idle=$(vmstat -t | tail -4 | awk '{print $15}' | xargs)
+cpu_kernel=$(vmstat -t | tail -6 | awk '{print $13}' | xargs)
+disk_io= $(vmstat -d | tail -1 | awk '{print $10}' | xargs)
+disk_available=$(echo "di_out"  | tail -3 | awk '{print $3}' |xargs)
