@@ -3,9 +3,6 @@ lscpu_out=`lscpu`
 mem_info=$(cat /proc/meminfo)
 di_out=$(df -BM /)
 
-
-cpu_number=$(echo "$lscpu_out"  | egrep "^CPU\(s\):" | awk '{print $2}' | xargs)
-
 #hardware
 hostname=$(hostname -f)
 cpu_number=$(echo "$lscpu_out"  | egrep "^CPU\(s\):" | awk '{print $2}' | xargs)
@@ -21,8 +18,6 @@ timestamp= $(vmstat -t | tail -1 | awk '{print $18}' | xargs)
 
 #usage
 memory_free=$(echo "mem_info"  | egrep "MemFree:" | awk '{print $2}' |xargs)
-
-#NO IDEA
 cpu_idle=$(vmstat -t | tail -4 | awk '{print $15}' | xargs)
 cpu_kernel=$(vmstat -t | tail -6 | awk '{print $13}' | xargs)
 disk_io= $(vmstat -d | tail -1 | awk '{print $10}' | xargs)
