@@ -40,3 +40,6 @@ export PGPASSWORD=$psql_password
 #Insert data into a database
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_usage"
 exit $?
+
+#Crontab Job Trial:
+#* * * * * bash /home/centos/dev/jarvis_data_eng_OwenSLiu/linux_sql/scripts/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log
