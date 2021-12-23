@@ -4,10 +4,10 @@
 #Github: OwenSLiu
 #Email: zekeinberlin@gmail.com
 
-#Establish db
+#Establish db capturing cmds
 cmd=$1
-db_username=postgres
-db_password='centos1234'
+db_username=$2
+db_password=$3
 
 #Start Docker
 sudo systemctl status docker || sudo systemctl start docker
