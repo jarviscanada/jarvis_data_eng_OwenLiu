@@ -14,7 +14,7 @@ if [ $# -ne 5 ]; then
   exit 1
 fi
 
-#- parse host hardware specifications using bash cmds
+#- parse host hardware specifications using bash cmd
 ##Save specs to variables
 hostname=$(hostname -f)
 lscpu_out=`lscpu`

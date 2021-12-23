@@ -14,7 +14,7 @@ if [ $# -ne 5 ]; then
   exit 1
 fi
 
-#Convert system specs into variables
+#Convert system spec into variables
 hostname=$(hostname -f)
 mem_info=$(cat /proc/meminfo)
 di_out=$(df -BM /)

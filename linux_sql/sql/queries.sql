@@ -28,7 +28,7 @@ FROM host_usage
 GROUP BY host_id,timestamp
 
 --Task 3
---The cron job is supposed to insert a new entry to the host_usage table every minute when the server is healthy.
+--The cron job is suposed to insert a new entry to the host_usage table every minute when the server is healthy.
 --We can assume that a server is failed when it inserts less than three data points within 5-min interval. Please write a query to detect host failures.
 
 SELECT host_id, roundmin(timestamp) AS ts, count(*) AS num_data_points
