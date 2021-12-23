@@ -21,12 +21,12 @@ di_out=$(df -BM /)
 
 #usage specs refinement
 memory_free=$(echo "mem_info"  | egrep "MemFree:" | awk '{print $2}' |xargs)
-total_mem=$(echo "mem_info"  | egrep "MemTotal:" | awk '{print $2}' |xargs)
 cpu_idle=$(vmstat -t | tail -4 | awk '{print $15}' | xargs)
 cpu_kernel=$(vmstat -t | tail -6 | awk '{print $13}' | xargs)
 disk_io= $(vmstat -d | tail -1 | awk '{print $10}' | xargs)
 disk_available=$(echo "di_out"  | tail -3 | awk '{print $3}' |xargs)
 timestamp= $(vmstat -t | tail -1 | awk '{print $18}' | xargs)
+total_mem=$(echo "mem_info"  | egrep "MemTotal:" | awk '{print $2}' |xargs)
 
 #Subquery to find matching id in host_info table
 host_id="(SELECT id FROM host_usage WHERE hostname='$hostname')";
