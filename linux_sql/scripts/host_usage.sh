@@ -21,6 +21,7 @@ di_out=$(df -BM /)
 
 #usage specs refinement
 memory_free=$(echo "mem_info"  | egrep "MemFree:" | awk '{print $2}' |xargs)
+total_mem=$(echo "mem_info"  | egrep "MemTotal:" | awk '{print $2}' |xargs)
 cpu_idle=$(vmstat -t | tail -4 | awk '{print $15}' | xargs)
 cpu_kernel=$(vmstat -t | tail -6 | awk '{print $13}' | xargs)
 disk_io= $(vmstat -d | tail -1 | awk '{print $10}' | xargs)
