@@ -1,0 +1,123 @@
+# Preferred name (Characters only)
+name: "Owen Liu"
+# Your GitHub repo root URL
+github_repo_root_url: "https://github.com/jarviscanada/jarvis_data_eng_OwenLiu"
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: "Hi there, My name is Owen Liu, I am an aspiring industrial engineering new grad from the University of Toronto. I specialized in operations research, data analysis, and project management. I had one research assistant experience with professor Hedergott from the University of Amsterdam and several industry-relevant core projects in my undergrad. The data industry is redefining and reconstructing our daily life with new challenges emerging every day.  I am eager to share my insights, learn from the game changers, and eventually impact the industry and beyond."
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Python (Numpy, Panda, Sklearn, Tensorflow, etc.)
+    - RDBMS/SQL,Postgresql
+    - Agile/Scrum
+    - R
+    - Simulation with tools like Simio
+    - MS Access & Excel
+    - Statistics (Hypothesis testing, A/B Testing, Model Fitting)
+  # At least 5 skills
+  competent:
+    - Java Object Oriented
+    - NoSQL
+    - Tableau
+    - Hadoop
+    - Optimization (Mixed Integer Programming, Dynamic Programming)
+    - Forecasting. Production/Revenue Modelling
+    - Decision Tree Learning (CART, Random Forest)
+    - Feature Engineering (Regression, Clustering, Grid Search)
+  # At least 5 skills
+  familiar:
+    - Linux/Bash
+    - Oracle
+    - Machine Learning (Neural networks, K-nearest Neighbours)
+    - Scala
+    - Spark
+    - Azure & AWS & Google Cloud
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_OwenLiu/tree/develop/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Provided he Jarvis LCA team with the linux hardware specifications of the nodes/centOS that Jarvis uses. Established a PostgreSQL instance using Docker. Retrieved the dynamic and static specs from the CentOS using Linux/Bash Scripts. Inserted the specs into two tables using DDL/DML. Solved 3 business-level questions with SQL."
+  - name: "Python Data Analytics"
+    git_url: "/python_data_anlytics"
+    description: ""
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: ""
+  - name: "Spark/Scala"
+    git_url: "/spark"
+    description: ""
+
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "An Information Retrieval Digital Platform for EV Stations"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Developed a full-stack cloud-based system that retrieves a large volume of electric vehicle charging stations data from the client's database. Transformed the data that caters to the interest and ability of users. Visulizaed and presented the data to end users in an easy-to-consume format with computer engineering and computer science students. Conducted a complete data integration process(ETL) including retrieval of 500K tuples of data given, elementary data analysis (EDA), data transformation and verification, and data integrations, which generates required assorted data to end users. Retrieved raw data from AWS data migration service. Adopted python and embedded PostgreSQL commands in data transformation, integration, and passing back to the database.  Adopted python matplotlib tools in front-end data visualizations."
+
+  - name: "A Developer Job Satisfaction Predictor"
+    description: "Predicted job satisfaction from a poll survey conducted by the StackOverFlow community. Performed data cleaning, amputation, and parsing to historical data. Visualized the data through sklearn and matplotlib in python. Applied logistic regression, decision tree, clustering to develop diffrent models. Attained precision of distinct models with a confusion matrix. Predicted job satisfaction from such models through simulation."
+
+  - name: "Airport Passenger Movement Simulation"
+    description: "Modeled historical data of passenger arrivals, check-ins, and security screening. Optimized the system for efficiency and cost, and provided budget-permitting upgrading decisions. pplied, analyzed, and tested the fitness of presumed statistical distributions over the historical data with R. Designed a Simio model to model the passenger movement."
+
+  - name: "An Online Earphone Encyclopedia Website"
+    description: "Developed a fully interactive website including functions like search, sort, review, account creation and edition. - Used Java Objected Oriented Programming, Microsoft Access, SQL to establish back-end, server connection. Enhanced Agile/Scrum project methodology. Gave a demo/release speech on behalf of the team."
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Data Engineer Consultant"
+    company: "Jarvis"
+    duration: "2021 - present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Performed various data cleaning, analysis, and report building tasks for Jarvis."
+
+  - title: "Research Associate"
+    company: "Peking University"
+    duration: "2019.6 - 2019.8"
+    description: "Optimized an investor problem through stochastic approximation. Constructed a pricing model of an American call option. Attained the volatility where the price of the option has an optimal fit to the actual price through stochastic approximation. Applied steepest descent algorithm, non-linear programming, monte carlo simulation, and gradient estimation in Python. Retrieved finance data from a dummy database with SQL."
+
+  - title: "Store/Warehouse Associate"
+    company: "TJX Canada"
+    duration: "2018.9 - 2019.6"
+    description: "Familiarized with store and warehouse logistics. Enhanced interpersonal skills with customers with English and French"
+
+  - title: "TOEFL/GRE Tutor"
+    company: "Billions Education"
+    duration: "2018.6 - 2018.8"
+    description: "Delivered insights in English to over ESL mentees with TOEFL writing and speaking tests and GRE Verbal test."
+
+#List of edcuation
+education: 
+  - school_name: "University of Toronto"
+    duration: "2016-2021"
+    degree: "Bachelor of Applied Science"
+    department: "Mechanical and Industrial Engineering"
+
+#Optional section
+others:
+    #category
+  - title: "Certificates"
+    bullets:
+    - "Graduate Record Examination(GRE): Verbal 166, Quant 169, Global Top 5%"
+    - "Microsoft Azure DP600 Certificate"
+
+  - title: "awards_achievements"
+    bullets:
+      - "N/A"
+
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Volunteer @ Toronto International Film Festival 2017"
+      - "Volunteer @ Toronto Pride 2016 and 2017"
