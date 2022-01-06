@@ -22,17 +22,20 @@ FROM retail;
 -- Q6 Calculate average invoice amount excluding invoices with a negative amount
 -- (e.g. canceled orders have negative amount)
 SELECT AVG(total) AS "avg"
-FROM (SELECT R.invoice_id AS "id", SUM(R.quantity * R.unit_price) AS total
+FROM (
+           SELECT R.invoice_id AS "id", SUM(R.quantity * R.unit_price) AS total
            FROM retail R
            GROUP BY id)
-           HAVING total >= 0)
-           ;
+           HAVING total >= 0
+      ) AS x LIMIT 1;
+      ;
 
 --Q7: Calculate total revenue (e.g. sum of unit_price * quantity)
 SELECT SUM(quantity * unit_price) AS "sum"
 FROM retail;
 
 --Q8: Calculate total revenue by YYYYMM
-SELECT FORMAT (invoice_date, 'yyyymm'), SUM(quantity * unit_price)
+SELECT to_char(invoice_date, 'yyyy-mm') AS yyyymm, SUM(quantity * unit_price)
 FROM retail
-GROUP BY 'yyyymm';
+GROUP BY yyyymm
+ORDER BY yyyymm;
