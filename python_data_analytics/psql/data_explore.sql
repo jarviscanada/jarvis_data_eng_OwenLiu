@@ -23,12 +23,12 @@ FROM retail;
 -- (e.g. canceled orders have negative amount)
 SELECT AVG(A.total) AS "avg"
 FROM (
-           SELECT R.invoice_id AS "id", SUM(R.quantity * R.unit_price) AS total
-           FROM retail R
-           GROUP BY id
-           HAVING total >= 0
-      ) AS A
-      ;
+      SELECT R.invoice_no AS "id", SUM(R.quantity * R.unit_price) AS "total"
+      FROM retail R
+      GROUP BY id
+      HAVING SUM(R.quantity * R.unit_price) > 0
+     ) AS A
+     ;
 
 --Q7: Calculate total revenue (e.g. sum of unit_price * quantity)
 SELECT SUM(quantity * unit_price) AS "sum"
