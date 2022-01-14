@@ -24,7 +24,8 @@ The Jarvis Data Team used Docker, PostgreSQL, Jupyter Notebook, Python Sqlalchem
 ## Project Architecture
 The LGS Web APP uses Azure services in backend API management, frontend, and database servers. Since it's a PoC project, the Jarvis team does not have access to work in the LGS Azure Environment.
 The LGS ETLed the data between december 2009 to december 2011 into a sql file and shared this sql file with the Jarvis Data Team. 
-The Jarvis team stored the data in a PostgreSQL instance provisioned by docker. This PostgreSQL instance serves as the data warehouse, the foundation for the next step: data wrangling. 
+The Jarvis team stored the data in a PostgreSQL instance provisioned by docker. The Jarvis Team performed data exploration with data_explore.sql, gaining preliminary apprehension to the dataset.
+Also, this PostgreSQL instance serves as the data warehouse, the foundation for the next step: data wrangling. 
 The Jarvis Data Team constructed a Jupyter Notebook instance through docker, connected the Jupyter instance with the PostgreSQL instance through a docker network.
 This essentially helps the data team to import data from the PostgreSQL instance into Jupyter Notebook as a data frame for further analysis purposes. The Jarvis team led comprehensive data analysis towards the imported data and generated business insights based on the analysis results.
 
