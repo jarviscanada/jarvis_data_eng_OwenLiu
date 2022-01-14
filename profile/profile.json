@@ -44,8 +44,8 @@
       "description": [
         "Delivered data analytics report to the Jarvis LGS team via Jupyte Notebook and Github.",
         "Provisioned a Jupyter Notebook instance using Docker.",
-        "Used a docker network to connect the Jupyter Notebook Instance and a Postgresql Instance.",
-        "Loaded the .sql file in Jupyter notebook as a data frame with sqlalchemy, Postgresql connection, and Python Numpy.",
+        "Used a docker network to connect the Jupyter Notebook Instance and a PostgreSQL Instance.",
+        "Loaded the .sql file in Jupyter notebook as a data frame with sqlalchemy, PostgreSQL connection, and Python Numpy.",
         "Conducted Elementary Data Analysis (EDA) with Numpy operations.",
         "Answered to eight business questions with Pandasql, Python NumPy, pandas, matplotlib and seaborn.",
         "Presented insights inspired by the business answers with descriptive, predictive, and prescriptive analysis recommendations."
@@ -68,22 +68,21 @@
   "others": [
     {
       "bullets": [
-        "Graduate Record Examination(GRE): Verbal 166/170, Quant 169/170, Global Top 5%.",
-        "Microsoft Azure DP600 Certificate"
+        "Graduate Record Examination(GRE): Verbal 166/170, Quant 169/170, Global Top 5%."
       ],
       "title": "Certificates"
     },
     {
       "bullets": [
-        "Yale World Youth Economic Forum: 2016 Outstanding Candidate"
+        "Yale World Youth Economic Forum: 2016 Outstanding Candidate."
       ],
       "title": "awards_achievements"
     },
     {
       "bullets": [
-        "Volunteer @ Toronto International Film Festival 2017",
-        "Volunteer @ Toronto Pride 2016 and 2017",
-        "French B1, Achieving full fluency in 2022"
+        "Volunteer @ Toronto International Film Festival 2017.",
+        "Volunteer @ Toronto Pride 2016 and 2017.",
+        "French B1, Achieving full fluency in 2022."
       ],
       "title": "Activities/Hobbies"
     }
@@ -91,7 +90,7 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Performed various data retrieval, analysis, and report building jobs for the Jarvis LCA team using Shell scripts and docker-provisioned postgresql. Performed data analysis, visualization, and business question proposals for a Jarvis Client with docker-provisioned PostgreSQL and Jupyter Lab. ",
+      "description": "Performed various data retrieval, analysis, and report building jobs for the Jarvis LCA team using Shell scripts and docker-provisioned PostgreSQL. Performed data analysis, visualization, and business question proposals for a Jarvis Client with docker-provisioned PostgreSQL and Jupyter Lab. ",
       "duration": "2021 - present",
       "title": "Data Engineer Consultant."
     },
@@ -109,7 +108,7 @@
     },
     {
       "company": "Billions Education",
-      "description": " Delivered insights in English to over 20 numbers of ESL mentees with TOEFL writing and speaking tests and GRE Verbal test. Good listener. Listened to mentees' concerns before course plans and collected their feedback after each sector of the course. ",
+      "description": " Delivered insights in English to over 20 numbers of ESL mentees with TOEFL writing and speaking tests and GRE Verbal test. As a good listener, I Listened to mentees' concerns before course plans and collected their feedback after each sector of the course. ",
       "duration": "2018.6 - 2018.8",
       "title": "TOEFL/GRE Tutor"
     }
@@ -129,6 +128,7 @@
       "Linux/Bash",
       "Oracle",
       "Machine Learning (Neural networks, K-nearest Neighbours)",
+      "Git \u0026 GitHub",
       "Scala",
       "Spark",
       "Azure \u0026 AWS \u0026 Google Cloud"
@@ -136,7 +136,7 @@
     "proficient": [
       "Python (NumPy, Pandas, Sklearn, Seaborn, Matplotlib, Tensorflow, etc.)",
       "RDBMS/SQL",
-      "Postgresql",
+      "PostgreSQL",
       "Agile/Scrum",
       "R",
       "Simulation (With tools like Simio)",

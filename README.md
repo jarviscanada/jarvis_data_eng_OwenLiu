@@ -4,11 +4,11 @@ I am an aspiring industrial engineering new grad from the University of Toronto.
 
 ## Skills
 
-**Proficient:** Python (NumPy, Pandas, Sklearn, Seaborn, Matplotlib, Tensorflow, etc.), RDBMS/SQL, Postgresql, Agile/Scrum, R, Simulation (With tools like Simio), MS Access & Excel, Statistics (Hypothesis testing, A/B Testing, Model Fitting)
+**Proficient:** Python (NumPy, Pandas, Sklearn, Seaborn, Matplotlib, Tensorflow, etc.), RDBMS/SQL, PostgreSQL, Agile/Scrum, R, Simulation (With tools like Simio), MS Access & Excel, Statistics (Hypothesis testing, A/B Testing, Model Fitting)
 
 **Competent:** Java, NoSQL, Tableau, Hadoop, Optimization (Mixed Integer Programming, Dynamic Programming), Forecasting. Production/Revenue Modelling, Decision Tree Learning (CART, Random Forest), Feature Engineering (Regression, Clustering, Grid Search)
 
-**Familiar:** Linux/Bash, Oracle, Machine Learning (Neural networks, K-nearest Neighbours), Scala, Spark, Azure & AWS & Google Cloud
+**Familiar:** Linux/Bash, Oracle, Machine Learning (Neural networks, K-nearest Neighbours), Git & GitHub, Scala, Spark, Azure & AWS & Google Cloud
 
 ## Jarvis Projects
 
@@ -28,8 +28,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_OwenLiu](h
       
   - Delivered data analytics report to the Jarvis LGS team via Jupyte Notebook and Github.
   - Provisioned a Jupyter Notebook instance using Docker.
-  - Used a docker network to connect the Jupyter Notebook Instance and a Postgresql Instance.
-  - Loaded the .sql file in Jupyter notebook as a data frame with sqlalchemy, Postgresql connection, and Python Numpy.
+  - Used a docker network to connect the Jupyter Notebook Instance and a PostgreSQL Instance.
+  - Loaded the .sql file in Jupyter notebook as a data frame with sqlalchemy, PostgreSQL connection, and Python Numpy.
   - Conducted Elementary Data Analysis (EDA) with Numpy operations.
   - Answered to eight business questions with Pandasql, Python NumPy, pandas, matplotlib and seaborn.
   - Presented insights inspired by the business answers with descriptive, predictive, and prescriptive analysis recommendations.
@@ -51,13 +51,13 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_OwenLiu](h
 
 ## Professional Experiences
 
-**Data Engineer Consultant., Jarvis (2021 - present)**: Performed various data retrieval, analysis, and report building jobs for the Jarvis LCA team using Shell scripts and docker-provisioned postgresql. Performed data analysis, visualization, and business question proposals for a Jarvis Client with docker-provisioned PostgreSQL and Jupyter Lab. 
+**Data Engineer Consultant., Jarvis (2021 - present)**: Performed various data retrieval, analysis, and report building jobs for the Jarvis LCA team using Shell scripts and docker-provisioned PostgreSQL. Performed data analysis, visualization, and business question proposals for a Jarvis Client with docker-provisioned PostgreSQL and Jupyter Lab. 
 
 **Research Associate, Peking University (2019.6 - 2019.8)**: Optimized an investor problem through stochastic approximation in Python. Constructed a pricing model of an American call option in pandas Python. Attained the volatility where the predicted price of the option has an optimal fit to the actual price through stochastic approximation in Python. Simulated price samples with a random generator in NumPy Python. Caught the feasible results with steepest descent algorithm, non-linear programming, Monte Carlo simulation, and gradient estimation. Visualized the distributed result in matplotlib. Retrieved finance data from a dummy database with SQL. Picked up stock market basics in a short time span.
 
 **Store/Warehouse Associate, TJX Canada (2018.9 - 2019.6)**:  Enhanced interpersonal skills with customers with English and French. Worked as a team in-store to address customer concerns.
 
-**TOEFL/GRE Tutor, Billions Education (2018.6 - 2018.8)**:  Delivered insights in English to over 20 numbers of ESL mentees with TOEFL writing and speaking tests and GRE Verbal test. Good listener. Listened to mentees' concerns before course plans and collected their feedback after each sector of the course. 
+**TOEFL/GRE Tutor, Billions Education (2018.6 - 2018.8)**:  Delivered insights in English to over 20 numbers of ESL mentees with TOEFL writing and speaking tests and GRE Verbal test. As a good listener, I Listened to mentees' concerns before course plans and collected their feedback after each sector of the course. 
 
 
 ## Education
@@ -66,8 +66,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_OwenLiu](h
 
 ## Miscellaneous
 - Graduate Record Examination(GRE): Verbal 166/170, Quant 169/170, Global Top 5%.
-- Microsoft Azure DP600 Certificate
-- Yale World Youth Economic Forum: 2016 Outstanding Candidate
-- Volunteer @ Toronto International Film Festival 2017
-- Volunteer @ Toronto Pride 2016 and 2017
-- French B1, Achieving full fluency in 2022
+- Yale World Youth Economic Forum: 2016 Outstanding Candidate.
+- Volunteer @ Toronto International Film Festival 2017.
+- Volunteer @ Toronto Pride 2016 and 2017.
+- French B1, Achieving full fluency in 2022.
