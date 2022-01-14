@@ -11,37 +11,45 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_OwenLiu",
   "highlighted_projects": [
     {
-      "description": "- Developed a full-stack cloud-based system that retrieves a large volume of electric vehicle charging stations data from the client's database. Transformed the data that caters to the interest and ability of users. Visulizaed and presented the data to end users in an easy-to-consume format with computer engineering and computer science students. - Conducted a complete data integration process(ETL) including retrieval of 500K tuples of data given, elementary data analysis (EDA), data transformation and verification, and data integrations, which generates required assorted data to end users. - Retrieved raw data from AWS data migration service.\n - Established PostgreSQL connection to migrated database.\n - Adopted python in data cleaning, transformation, integration, analysis, and passing back to the database.\n - Adopted python sk-learn, matplotlib tools in data visualizations.",
-      "name": "An Information Retrieval Digital Platform for EV Stations"
+      "description": " Developed a full-stack Web Application that showcases electric vehicle charging stations(EVCS) data to EVCS Owners and Managers using Python, FastAPI, React, AWS, and Postgresql Database. Conducted research regarding use cases, user stories and personas. Instantiated data ingestion service in migrating raw data from the client's database using the AWS Migration Service. Stored the migrated data in our database and made a Multi-AZ Backup DB. Instantiated data processing service for applying algorithmic transformations and recorded them in our database using Python supported by AWS EC2. Scheduled the data transformation jobs on AWS batch to keep the processed data up to date. Established PostgreSQL connection to migrated database. Transformed the historical data catered to the interest of end-users inspired by customer demographic research. Featured station metrics, including current power, station availability, average charging hours for each port, etc. Presented the station metrics to end-users with SQL-empowered OLTP Queries. Featured aggregated metrics, including monthly/weekly charging power in total, weekly /monthly visits to each port, etc. Presented the aggregated metrics to end-users with SQL-empowered OLTP Queries. Displayed over ten options of bar plots, line plots, histogram plots of the historical data with Python Seaborn and matplotlib upon user requests. Performed data analysis towards transformed historical data using python-empowered OLAP Queries in the data warehouse and provided insights to EVCS management accordingly. Instantiated the API service, a RESTful backend API written in Python, deployed on AWS Elastic Beanstalk to utilize auto-scaling feature. Deployed the frontend UI in an AWS S3 bucket and served end-users via CloudFront. TLS Encrypted the data transfer between the backend API and the user interface. Used AWS Cognito as the OAuth provider for backend secure access. Conducted industry-level usability test and generated reports spanning the functionality, ease of use, aesthetics, recommendations of the web app. Received critical acclaim from the supervised professor and the industry client when the product was demoed. ",
+      "name": "Capstone Project: the eCA System. An Information Retrieval Digital Platform for EV Stations"
     },
     {
-      "description": " - Predicted job satisfaction from a poll survey conducted by the StackOverFlow community. - Performed data cleaning, amputation, and parsing to raw data. - Visualized the data through sklearn and matplotlib tools in python. - Applied logistic regression, decision tree, clustering to develop diffrent models. - Attained precision of distinct models with a confusion matrix. - Predicted job satisfaction from such models through simulation.",
-      "name": "A Developer Job Satisfaction Predictor"
+      "description": " Predicted job satisfaction and competence from a poll survey conducted by the StackOverFlow community using regression, random forest classifier, and clustering. Performed data cleaning to NA values, amputation to unnecessary attributes, parsing and concatenating to raw data, reordering and mapping data with Jupyter Notebook. Performed data visualization through seaborn, sklearn and matplotlib tools in Python. Drew bar plots, box plots, in-plots of job satisfaction aggregated by different factors. Attained preliminary insights through these graphs. Constructed a baseline model that always returns the mean of the target variables in the train set. Initialized 80% of the data as a training set and 20% for a testing set. Attained the precision score of 0.35 of prediction using pandas in Python. Categorized different job satisfaction levels and competence levels into numerical categorical variables using pandas in Python. Constructed a logistic regression model predicting the performance of categorical variables, achieving a precision score of 0.43 in Python. Constructed a Random Forest Classifier with tuned hyperparameters, achieving a precision score of 0.44 in Python. Constructed a K-Nearest Neighbours Classifier with k=500 for each categorical variable, attaining a precision of 0.37 in Python. Analyzed a confusion matrix of all the models' precisions through Seaborn. Calculated the proportion of data points that were predicted lower than true values for each model using Python. Selected Random Forest Classifier as the best performing model for job satisfaction, Logistic Regression Classifier for competence. Constructed a job satisfaction optimization model based on the score results from the selected results above in Python. Ran the simulation model 100 times, attained the optimized result with different sets of biased constraints in Python. Conducted sensitivity analysis towards different sets of constraints. Delivered insights through predictive analysis to the simulation model result and predictive model results in Python. ",
+      "name": "A Developer Job Satisfaction Predictor."
     },
     {
-      "description": " - Modeled historical data of passenger arrivals, check-ins, and security screening. - Optimized the system for efficiency and cost, and provided budget-permitting upgrading business decisions. - Applied, analyzed, and tested the fitness of presumed statistical distributions over the historical data with Kirmogorov and Smirnov Test using R. - Designed a Simio model to model the real-time passenger movement.",
-      "name": "Airport Passenger Movement Simulation"
+      "description": " Modelled historical data from several CSVs, including passenger arrivals, check-ins, and security screening, bag drops, in R. Analyzed and tested the fitness of presumed statistical distributions over the historical data with the Kirmogorov and Smirnov Test using R. Designed a Simio model to simulate the real-time passenger movement. Identified congestion in different modules of the screening process through Simio model performance. Found 10% of passengers will miss the flights. Provided and instantiated budget-permitting upgrading business decisions in Simio. Decreased the proportion of flight-misses to 4% from performance of the upgraded Simio Model.",
+      "name": "Airport Passenger Movement Simulator."
     },
     {
-      "description": " - Developed a fully interactive website including functions like search, sort, review, account creation and edition. - Used Java Objected Oriented Programming, Microsoft Access, SQL to establish back-end, server connection. - Enhanced Agile/Scrum project methodology. - Gave a demo/release speech on behalf of the team.",
-      "name": "An Online Earphone Encyclopedia Website"
+      "description": " Developed a fully interactive website including functions like search, sort, review, account creation and edition using Java JDBC, MS Access Database, Git, and Apache Tomcat. Established an RDBMS in Microsoft Access from scratch. Connected MS Access to the Java backend using the Youcanaccess.jar file. Deployed and practiced Agile/Scrum project management methodology. Worked with a 7-person team dynamically through GitHub. Gave a demo/project release speech on behalf of the team.",
+      "name": "An Online Earphone Encyclopedia Website."
     }
   ],
   "jarvis_projects": [
     {
       "description": [
-        "Provided he Jarvis LCA team with the linux hardware specifications of the nodes/centOS that Jarvis uses.",
-        "Established a PostgreSQL instance using Docker.",
-        "Retrieved the dynamic and static specs from the CentOS using Linux/Bash Scripts.",
-        "Inserted the specs into two tables using RDBMS/SQL.",
-        "Performed a crontab job in automating dynamic data retrieval every one minute.",
-        "Solved 3 business-level questions with data analytics skills in SQL."
+        "Developed a cluster resource monitoring program that collects data CPU hardware specifications using Bash Shell Scripts.",
+        "Provisioned a PostgreSQL instance using Docker.",
+        "Stored static and dynamic real-time data in the psql instance.",
+        "Automated dynamic real-time data retrieval every one minute using crontab.",
+        "Inserted the specifications into two tables using Data Definition Language.",
+        "Resolved three business-level questions with data analytics tools in SQL."
       ],
       "git_url": "https://github.com/jarviscanada/jarvis_data_eng_OwenLiu/tree/develop/linux_sql",
       "name": "Cluster Monitor"
     },
     {
-      "description": "In Progress",
+      "description": [
+        "Delivered data analytics report to the Jarvis LGS team via Jupyte Notebook and Github.",
+        "Provisioned a Jupyter Notebook instance using Docker.",
+        "Used a docker network to connect the Jupyter Notebook Instance and a Postgresql Instance.",
+        "Loaded the .sql file in Jupyter notebook as a data frame with sqlalchemy, Postgresql connection, and Python Numpy.",
+        "Conducted Elementary Data Analysis (EDA) with Numpy operations.",
+        "Answered to eight business questions with Pandasql, Python NumPy, pandas, matplotlib and seaborn.",
+        "Presented insights inspired by the business answers with descriptive, predictive, and prescriptive analysis recommendations."
+      ],
       "git_url": "/python_data_anlytics",
       "name": "Python Data Analytics"
     },
@@ -60,14 +68,14 @@
   "others": [
     {
       "bullets": [
-        "Graduate Record Examination(GRE): Verbal 166, Quant 169, Global Top 5%",
+        "Graduate Record Examination(GRE): Verbal 166/170, Quant 169/170, Global Top 5%.",
         "Microsoft Azure DP600 Certificate"
       ],
       "title": "Certificates"
     },
     {
       "bullets": [
-        "N/A"
+        "Yale World Youth Economic Forum: 2016 Outstanding Candidate"
       ],
       "title": "awards_achievements"
     },
@@ -83,32 +91,32 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": " - Performed various data retrieval, analysis, and report building jobs for the Jarvis LCA team using Shell scripts annd docker-provisioned postgresql. - Performed data analysis, visualization, and business question proposals for a Jarvis Client with docker-provisioned postgresql and jupyter lab. ",
+      "description": "Performed various data retrieval, analysis, and report building jobs for the Jarvis LCA team using Shell scripts and docker-provisioned postgresql. Performed data analysis, visualization, and business question proposals for a Jarvis Client with docker-provisioned PostgreSQL and Jupyter Lab. ",
       "duration": "2021 - present",
-      "title": "Data Engineer Consultant"
+      "title": "Data Engineer Consultant."
     },
     {
       "company": "Peking University",
-      "description": " - Optimized an investor problem through stochastic approximation. - Constructed a pricing model of an American call option. - Attained the volatility where the predicted price of the option has an optimal fit to the actual price through stochastic approximation. - Applied steepest descent algorithm, non-linear programming, monte carlo simulation, and gradient estimation in Python. - Retrieved finance data from a dummy database with SQL. - Picked up stock market basics in a short time span.",
+      "description": "Optimized an investor problem through stochastic approximation in Python. Constructed a pricing model of an American call option in pandas Python. Attained the volatility where the predicted price of the option has an optimal fit to the actual price through stochastic approximation in Python. Simulated price samples with a random generator in NumPy Python. Caught the feasible results with steepest descent algorithm, non-linear programming, Monte Carlo simulation, and gradient estimation. Visualized the distributed result in matplotlib. Retrieved finance data from a dummy database with SQL. Picked up stock market basics in a short time span.",
       "duration": "2019.6 - 2019.8",
       "title": "Research Associate"
     },
     {
       "company": "TJX Canada",
-      "description": " - Familiarized with store and warehouse logistics. - Enhanced interpersonal skills with customers with English and French.",
+      "description": " Enhanced interpersonal skills with customers with English and French. Worked as a team in-store to address customer concerns.",
       "duration": "2018.9 - 2019.6",
       "title": "Store/Warehouse Associate"
     },
     {
       "company": "Billions Education",
-      "description": " - Delivered insights in English to over 20 numbers of ESL mentees with TOEFL writing and speaking tests and GRE Verbal test.",
+      "description": " Delivered insights in English to over 20 numbers of ESL mentees with TOEFL writing and speaking tests and GRE Verbal test. Good listener. Listened to mentees' concerns before course plans and collected their feedback after each sector of the course. ",
       "duration": "2018.6 - 2018.8",
       "title": "TOEFL/GRE Tutor"
     }
   ],
   "skills": {
     "competent": [
-      "Java Object Oriented",
+      "Java",
       "NoSQL",
       "Tableau",
       "Hadoop",
@@ -126,15 +134,15 @@
       "Azure \u0026 AWS \u0026 Google Cloud"
     ],
     "proficient": [
-      "Python (Numpy, Panda, Sklearn, Tensorflow, etc.)",
+      "Python (NumPy, Pandas, Sklearn, Seaborn, Matplotlib, Tensorflow, etc.)",
       "RDBMS/SQL",
       "Postgresql",
       "Agile/Scrum",
       "R",
-      "Simulation with tools like Simio",
+      "Simulation (With tools like Simio)",
       "MS Access \u0026 Excel",
       "Statistics (Hypothesis testing, A/B Testing, Model Fitting)"
     ]
   },
-  "summary": "Hi there, My name is Owen Liu, I am an aspiring industrial engineering new grad from the University of Toronto. I specialized in operations research, data analysis, and project management. I had one research assistant experience with professor Hedergott from the University of Amsterdam and several industry-relevant core projects in my undergrad. The data industry is redefining and reconstructing our daily life with new challenges emerging every day.  I am eager to share my insights, learn from the game changers, and eventually impact the industry and beyond."
+  "summary": "I am an aspiring industrial engineering new grad from the University of Toronto. Throughout my undergrad, I specialized in data analytics, operations research, and project management; I had one research assistant experience regarding statistics approaches in the stock market using Python; Besides, several industry-relevant core projects in my undergrad have built up my critical thinking, problem-solving and fast-learning skills; As a current Jarvis employee, I am enhancing my skill sets with Docker, RDBMS/SQL, Python data analytics, Hadoop, Scala/Spark etc. Apart from being a data analytics and data science enthusiast, I am a total people person. I have confident conflict-solving and interpersonal skills. Aiming to be a competent trilingual speaker in 2022, I have proficient verbal and documentation skills in English. I also have intermediate French skills, but I have been hammering it since graduation and tackling a French DELF B2 exam in June 2022. Most importantly, I am highly empathetic. I tend to be 'there' with stakeholders first instead of conducting premature problem-solving regardless of the feelings of the stakeholders."
 }
