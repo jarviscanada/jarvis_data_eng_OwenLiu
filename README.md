@@ -66,7 +66,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_OwenLiu](h
 
 ## Miscellaneous
 - Graduate Record Examination(GRE): Verbal 166/170, Quant 169/170, Global Top 5%.
-- Yale World Youth Economic Forum: 2016 Outstanding Candidate.
+- Yale World Youth Economics Forum: 2016 Outstanding Candidate.
 - Volunteer @ Toronto International Film Festival 2017.
 - Volunteer @ Toronto Pride 2016 and 2017.
 - French B1, Achieving full fluency in 2022.
